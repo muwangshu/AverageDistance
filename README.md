@@ -11,8 +11,7 @@ fiona (for reading GIS data, optional)
 ~~~
 
 ## Tests in the Manuscript 
-Test data stored in **TestData\\**
-&nbsp;&nbsp;&nbsp;&nbsp;**ResearchArea.shp**: Polygon Shapefile contaning test data. For each polygon, compute the distance between this polygon and the point defined in the using fields *REFX* and *REFY* as *X,Y* coordinates respectively.
+Test data stored in **TestData\\ResearchArea.shp**: Polygon Shapefile contaning test data. For each polygon, compute the distance between this polygon and the point defined in the using fields *REFX* and *REFY* as *X,Y* coordinates respectively.
 
 Reproduce test result in the Test section using **Test.py**:
 &nbsp;&nbsp;&nbsp;&nbsp;**getTestPolygons()**: Get polygons in Figure 4
