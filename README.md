@@ -1,6 +1,9 @@
 # the avgdist package
 Calculate Average Distance between Geometries
 
+# References
+Mu, W. & Tong, D. (2020). Distance in Spatial Analysis: Measurement, Bias, and Alternatives. Geographical Analysis. 52: 511-536. 
+Mu, W. & Tong, D. (2021). Computation of the distance between a polygon and a point in spatial analysis. International Journal of Geographical Information Science. Accepted and upcoming.
 
 ## Requirements
 ~~~
@@ -10,30 +13,9 @@ shapely
 fiona (for reading GIS data, optional)
 ~~~
 
-## Tests in the Manuscript 
-Test data stored in **TestData\\ResearchArea.shp**: Polygon Shapefile contaning test data. For each polygon, compute the distance between this polygon and the point defined in the using fields *REFX* and *REFY* as *X,Y* coordinates respectively.
-
-Reproduce test result in the Test section using **Test.py**:
-&nbsp;&nbsp;&nbsp;&nbsp;**getTestPolygons()**: Get polygons in Figure 4
-&nbsp;&nbsp;&nbsp;&nbsp;**EfficiencyTest()**: compare the efficiency of different methods (Figure 6)
-&nbsp;&nbsp;&nbsp;&nbsp;**AccuracyTestNMax()**: Test the accuracy of the random points method using n-max points (Table 1)
-&nbsp;&nbsp;&nbsp;&nbsp;**GetNHat()**: Calculate the value of n-hat (Table 2)
-&nbsp;&nbsp;&nbsp;&nbsp;**AccuracyTestNHat()**: Test the accuracy of the random points method using n-hat points (Table 3)
-
-Reproduce the parallel computing test in the discussion section using **ParallelTest.py**:
-&nbsp;&nbsp;&nbsp;&nbsp;**SingleComputeTest()**: Computing using single thread.
-&nbsp;&nbsp;&nbsp;&nbsp;**ParallelComputeTest1()**: Parallel computing mode 1
-&nbsp;&nbsp;&nbsp;&nbsp;**ParallelComputeTest2()**: Parallel computing mode 2
-
-Reproduce the statistical performance test in the Appendix B using **TestStates.py** and **GenerateGRF**:
-&nbsp;&nbsp;&nbsp;&nbsp;**TestCompareGEOS()**: Generate distances in the test
-&nbsp;&nbsp;&nbsp;&nbsp;**GenerateGRF** is a R package: 
-&nbsp;&nbsp;&nbsp;&nbsp;**SimulationUnif()**: Test when the individual distribution is homogenous 
-&nbsp;&nbsp;&nbsp;&nbsp;**SimulationUnif()**: Test when the individual distribution is heterogenous 
-
 ## Examples
 We provide some examples to show the useage of avgdist, available in **Examples.py**
-###Example 1
+### Example 1
 A simple example calculating distance between a polygon and a point
 1. Import the **avgdist** packages
 ```python
@@ -72,7 +54,7 @@ dist, time = DistCalc.DistCalcPART(pnt, plg)
 dist, time = DistCalc.DistCalcMABBCF(pnt, plg)
 ```
 
-###Example 2
+### Example 2
 An example calculating distance between a polygon and a point by reading polygon data from shapefile.
 
 1. Import packages
