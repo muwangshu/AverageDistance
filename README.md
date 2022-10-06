@@ -3,7 +3,7 @@ Calculate Average Distance between Geometries
 
 # References
 * Mu, W. & Tong, D. (2020). Distance in Spatial Analysis: Measurement, Bias, and Alternatives. _Geographical Analysis_. 52: 511-536. 
-* Mu, W. & Tong, D. (2021). Computation of the distance between a polygon and a point in spatial analysis. _International Journal of Geographical Information Science_. Accepted and upcoming.
+* Mu, W. & Tong, D. (2021). Computation of the distance between a polygon and a point in spatial analysis. _International Journal of Geographical Information Science_. 36 (8), 1575-1600.
 
 ## Requirements
 ~~~
